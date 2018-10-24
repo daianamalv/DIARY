@@ -1,21 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700&subset=cyrillic');
 
+
 body {
 font-family: "Fira Mono", monospace;
 font-size: 30px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, span {
+  margin: 0 auto;
+}
+
+h1, h3, p, section {
+  width: 700px;
   margin: 0 auto;
 }
 
 header {
   position: relative;
 
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
 
-  background-color: #FFCAD4;
+  height: 100%;
+
+  background-color: #E2B4BD;
+
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 100px 25px;
+
+  text-align: center;
+
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+}
+
+header ul {
+  position: absolute;
+  top: 220px;
+
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+
+    color: black;
+   }
+
+.photo {
+  position: relative;
+  z-index: 100;
+  bottom: 25px;
+
+  width: 100px;
+  height: 100px;
+  margin: auto;
+
+  border: 2px solid #564256;
+  border-radius: 50%;
+  background-image: url(img.jpg);
+  background-size: cover;
 }
 
 nav {
@@ -28,21 +80,21 @@ nav ul {
 
   display: flex;
 
-  width: 60vw;
-  margin: 0 auto;
-  padding: 10px 15px;
+  width: 65vw;
+  margin: auto;
+  padding: 10px 30px;
 
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  background-color: #9D8189;
+  background-color: #9B6A6C;
 
   font-size: 16px;
 
   justify-content: space-between;
 }
 
-section {
+.menu {
   position: absolute;
 
   display: inline;
@@ -53,37 +105,67 @@ section {
   font-size: 20px;
 }
 
-h1 {
-  margin-right: 300px;
-  margin-left: 300px;
-  padding: 100px 25px;
-
-  text-align: center;
-
-  font-family: 'Russo One', sans-serif;
-  font-size: 50px;
-}
-
-section li {
+.menu li {
   padding: 20px 25px;
 }
 
-h2.week1 {
+h2 {
+  position: relative;
+
+  width: 700px;
+  margin-left: 200px;
+
   font-size: 70px;
+  font-weight: 500;
+
 }
 
-ul li.week1 {
-  padding: 300px;
+.description {
+  top: 100px;
+  left: 150px;
+
+  margin:  100px 100px 100px 250px;
 }
 
 .week1 {
-  position: relative;
+  position: absolute;
   right: 250px;
-  left: 250px;
+  left: 200px;
 
   margin: auto;
+  padding: 50px;
 
-  background-color: #FFE5D9;
+  background-color: #BFD1E5;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.week1 li {
+  padding: 15px 15px;
+}
+
+div.meeting {
+  position: relative;
+  z-index: 100;
+
+  width: 900px;
+  height: 400px;
+  padding: 0;
+
+  background-image: url(meeting.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.week2 {
+  position: relative;
+  top: 1000px;
+
+  width: 700px;
+  margin: auto;
+  padding: 50px;
+
+  background-color: #BFD1E5;
   background-repeat: no-repeat;
   background-size: cover;
 }
