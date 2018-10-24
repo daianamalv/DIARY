@@ -1,22 +1,89 @@
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-spacing: 0;
+@import url('https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700&subset=cyrillic');
 
-	border-collapse: collapse;
+body {
+font-family: "Fira Mono", monospace;
+font-size: 30px;
+}
+
+h1, h2, h3, p {
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+
+  width: 100vw;
+
+  background-color: #FFCAD4;
+}
+
+nav {
+  }
+nav ul {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+
+  display: flex;
+
+  width: 60vw;
+  margin: 0 auto;
+  padding: 10px 15px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: #9D8189;
+
+  font-size: 16px;
+
+  justify-content: space-between;
+}
+
+section {
+  position: absolute;
+
+  display: inline;
+
+  padding: 20px 25px;
+
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  margin-right: 300px;
+  margin-left: 300px;
+  padding: 100px 25px;
+
+  text-align: center;
+
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+}
+
+section li {
+  padding: 20px 25px;
+}
+
+h2.week1 {
+  font-size: 70px;
+}
+
+ul li.week1 {
+  padding: 300px;
+}
+
+.week1 {
+  position: relative;
+  right: 250px;
+  left: 250px;
+
+  margin: auto;
+
+  background-color: #FFE5D9;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
