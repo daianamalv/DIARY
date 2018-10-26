@@ -56,11 +56,15 @@ header ul {
   font-size: 20px;
 }
 
-a {
+ul li a {
     text-decoration: none;
 
     color: black;
    }
+
+a {
+  color: black;
+}
 
 .photo {
   position: relative;
@@ -206,6 +210,24 @@ div.stpchan {
   background-image: url(stpchan.jpg);
 }
 
+div.hseday {
+  width: 700px;
+  height: 450px;
+
+  background-image: url(hseday.jpg);
+
+}
+
+div.hsedayarm {
+  width: 560px;
+  height: 450px;
+  margin-top: -470px;
+  margin-left: 760px;
+
+  background-image: url(hsedayarm.jpg);
+
+}
+
 .redMarkup {
   background-color: #E2B4BD;
   }
@@ -224,11 +246,7 @@ div.mission {
   background-size: cover;
   }
 
-  div.level {
-    padding: 60px 60px 60px 80px;
 
-    font-size: 45px;
-  }
 
 div.begin p a {
   position: relative;
@@ -236,5 +254,13 @@ div.begin p a {
   display: flex;
   flex-direction: column;
 
+  text-decoration: none;
+
   font-size: 20px;
+}
+
+div.level {
+  padding: 60px 60px 60px 80px;
+
+  font-size: 45px;
 }
