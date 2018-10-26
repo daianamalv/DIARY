@@ -131,7 +131,7 @@ h2 {
 }
 
 div.description p {
-  margin:  100px 100px 100px 250px;
+  margin:  50px 50px 50px 250px;
   padding: 50px 100px;
 
   background-color: white;
@@ -154,17 +154,56 @@ p a {
   padding: 60px 60px 60px 80px;
 }
 
-div.meeting {
+.meeting, .group, .cmd, .stpchan, .stproof, .hseday, .hsedayarm, .shab, .shabsuc, .nodeath {
   position: relative;
-  z-index: 100;
-  left: 250px;
 
-  width: 930px;
-  height: 300px;
+  margin: 20px;
 
-  background-image: url(meeting.jpg);
   background-position: center;
   background-size: cover;
+
+align-items: center;
+}
+
+div.meeting {
+  width: 700px;
+  height: 450px;
+
+  background-image: url(meeting.jpg);
+}
+
+div.group {
+  width: 560px;
+  height: 450px;
+  margin-top: -470px;
+  margin-left: 760px;
+
+  background-image: url(group.jpg);
+}
+
+div.cmd {
+  width: 700px;
+  height: 450px;
+  margin-left: 620px;
+
+  background-image: url(cmd.jpg);
+}
+
+div.stproof {
+  width: 560px;
+  height: 1000px;
+  margin-top: -470px;
+
+  background-image: url(stproof.jpg);
+}
+
+div.stpchan {
+  width: 700px;
+  height: 530px;
+  margin-top: -550px;
+  margin-left: 620px;
+
+  background-image: url(stpchan.jpg);
 }
 
 .redMarkup {
@@ -191,6 +230,11 @@ div.mission {
     font-size: 45px;
   }
 
-section {
+div.begin p a {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 20px;
 }
