@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,400i,500,500i&subset=cyrillic');
 
 
 body {
-font-family: "Fira Mono", monospace;
+word-spacing: 7px;
+
+font-family: 'Fira Sans Extra Condensed', sans-serif;
 font-size: 30px;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, {
   margin: 0 auto;
 }
 
-h1, h3, p, section {
+h1, h3, section {
   width: 700px;
   margin: 0 auto;
+}
+
+span {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-style: italic;
 }
 
 header {
@@ -71,7 +78,8 @@ a {
 }
 
 nav {
-  }
+}
+
 nav ul {
   position: absolute;
   top: 20px;
@@ -96,6 +104,7 @@ nav ul {
 
 .menu {
   position: absolute;
+  left: 0;
 
   display: inline;
 
@@ -103,6 +112,7 @@ nav ul {
 
   font-family: 'Russo One', sans-serif;
   font-size: 20px;
+
 }
 
 .menu li {
@@ -113,59 +123,74 @@ h2 {
   position: relative;
 
   width: 700px;
-  margin-left: 200px;
+  margin-left: 240px;
 
   font-size: 70px;
   font-weight: 500;
 
 }
 
-.description {
-  top: 100px;
-  left: 150px;
+div.description p {
+  margin:  100px 100px 100px 250px;
+  padding: 50px 100px;
 
-  margin:  100px 100px 100px 250px;
+  background-color: white;
+
+  font-size: 40px;
 }
 
-.week1 {
-  position: absolute;
-  right: 250px;
-  left: 200px;
+p {
+  z-index: 100;
 
-  margin: auto;
-  padding: 50px;
+  width: 900px;
+  margin-left: 230px;
+  padding: 15px 15px;
 
-  background-color: #BFD1E5;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.week1 li {
-  padding: 15px 15px;
+p a {
+  padding: 60px 60px 60px 80px;
 }
 
 div.meeting {
   position: relative;
   z-index: 100;
+  left: 250px;
 
-  width: 900px;
-  height: 400px;
-  padding: 0;
+  width: 930px;
+  height: 300px;
 
   background-image: url(meeting.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.week2 {
-  position: relative;
-  top: 1000px;
+.redMarkup {
+  background-color: #E2B4BD;
+  }
 
-  width: 700px;
-  margin: auto;
-  padding: 50px;
+div.mission {
+  position: absolute;
+  z-index: -1;
+  top: 900px;
 
-  background-color: #BFD1E5;
-  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+
+  opacity: 0.5;
+  background-image: url(mission.png);
+  background-position: center;
   background-size: cover;
+  }
+
+  div.level {
+    padding: 60px 60px 60px 80px;
+
+    font-size: 45px;
+  }
+
+section {
+  position: relative;
 }
