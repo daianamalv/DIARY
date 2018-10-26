@@ -5,6 +5,8 @@
 body {
 word-spacing: 7px;
 
+background-color: #EBF5EE;
+
 font-family: 'Fira Sans Extra Condensed', sans-serif;
 font-size: 30px;
 }
@@ -57,10 +59,10 @@ header ul {
 }
 
 ul li a {
-    text-decoration: none;
+  text-decoration: none;
 
-    color: black;
-   }
+  color: black;
+}
 
 a {
   color: black;
@@ -134,8 +136,42 @@ h2 {
 
 }
 
+div.challenge {
+  position: absolute;
+  top: 450px;
+  right: 0;
+  left: 0;
+
+  display: flex;
+
+  width: 65vw;
+  margin: auto;
+  padding: 10px;
+
+  letter-spacing: 1px;
+
+  background-color: #93A8AC;
+}
+
+div.challenge p {
+  margin-left: 0px;
+}
+
+div.chall {
+  position: relative;
+
+  width: 462px;
+  height: 355px;
+  margin-top: 200px;
+  margin-left: 450px;
+
+  background-image: url(chakkchakk.png);
+  background-position: center;
+  background-size: contain;
+}
+
 div.description p {
-  margin:  50px 50px 50px 250px;
+  margin:  15px 50px 50px 250px;
   padding: 50px 100px;
 
   background-color: white;
@@ -152,10 +188,6 @@ p {
 
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-p a {
-  padding: 60px 60px 60px 80px;
 }
 
 .meeting, .group, .cmd, .stpchan, .stproof, .hseday, .hsedayarm, .shab, .shabsuc, .nodeath {
@@ -228,6 +260,30 @@ div.hsedayarm {
 
 }
 
+div.shab {
+  width: 560px;
+  height: 1000px;
+
+  background-image: url(shab.jpg);
+}
+
+div.shabsuc {
+  width: 700px;
+  height: 450px;
+  margin-top: -1020px;
+  margin-left: 620px;
+
+  background-image: url(shabsuc.jpg);
+}
+
+div.nodeath {
+  width: 700px;
+  height: 530px;
+  margin-left: 620px;
+
+  background-image: url(nodeath.jpg);
+}
+
 .redMarkup {
   background-color: #E2B4BD;
   }
@@ -235,18 +291,20 @@ div.hsedayarm {
 div.mission {
   position: absolute;
   z-index: -1;
-  top: 900px;
+  top: 1040px;
+  left: 690px;
 
-  width: 300px;
-  height: 300px;
+  width: 360px;
+  height: 90px;
 
-  opacity: 0.5;
-  background-image: url(mission.png);
+  background-image: url(miss1.png);
   background-position: center;
   background-size: cover;
   }
 
-
+div.begin p {
+  padding: 20px;
+}
 
 div.begin p a {
   position: relative;
@@ -254,6 +312,7 @@ div.begin p a {
   display: flex;
   flex-direction: column;
 
+  text-align: right;
   text-decoration: none;
 
   font-size: 20px;
@@ -263,4 +322,35 @@ div.level {
   padding: 60px 60px 60px 80px;
 
   font-size: 45px;
+}
+
+footer {
+ position: relative;
+
+ display: flex;
+ flex-direction: column;
+
+ background-color: #9B6A6C;
+
+ justify-content: center;
+ align-items: center
+}
+
+footer section {
+   padding: 40px;
+
+   text-align: center;
+
+   font-family: 'Russo One', sans-serif;
+   font-size: 30px;
+}
+
+footer p {
+  position: relative;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  font-size: 20px;
 }
